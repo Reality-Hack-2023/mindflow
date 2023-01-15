@@ -2,9 +2,6 @@
 ## Mindflow: A VR + BCI Meditation App 
 https://devpost.com/software/mindflow-s5itbj?ref_content=my-projects-tab&ref_feature=my_projects
 
-<img width="873" alt="stars" src="https://user-images.githubusercontent.com/27537746/212567464-74ae4c1a-5195-411d-ba16-6b40b883dddf.png">
-
-
 ## What it does
 We receive the brain signals of the user using Arctop’s Neuos SDK and the BCI headband. The user uses an Oculus Quest 2 to immerse themselves in a meditation session. At the same time, Neuos reads the user’s brain signals for Focus and Enjoyment which allow us to personalize their meditation experience in real-time.
 
