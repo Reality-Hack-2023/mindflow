@@ -3,30 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TimeLoop : MonoBehaviour
+public class TimeLoop2 : MonoBehaviour
 {
     // Unit of time: seconds
     private float timer = 0.0f;
 
-    private const float startBubbleTime = 35.0f;
-    private const float stopBubbleTime = 80.0f;
-    private const float transitionTime = 80.1f;
-    private const float endTime = 91.0f;
+    private const float startCreateTime = 30.0f;
+    private const float stopCreateTime = 45.0f;
+    private const float transitionTime = 45.1f;
+    private const float endTime = 55.0f;
 
-    private bool isBubblePulsing = false;
+    private bool allowCreate = false;
     private bool isTransitioning = false;
     private bool isEnding = false;
 
-    private GameObject sphereObj;
-    private Bubble bubbleScript;
+    private GameObject gameObj;
+    private CreateStar starScript;
 
     [SerializeField]
     private AudioSource transitionVoice;
 
     void Start()
     {
-        sphereObj = GameObject.Find("Sphere");
-        bubbleScript = sphereObj.GetComponent<Bubble>();
+        gameObj = GameObject.Find("GameObject");
+        starScript = gameObj.GetComponent<CreateStar>();
     }
 
     // Update is called once per frame
@@ -39,18 +39,18 @@ public class TimeLoop : MonoBehaviour
         timer += Time.deltaTime;
 
         // Check if the timer has passed the time limit
-        if (timer >= startBubbleTime && !isBubblePulsing)
+        if (timer >= startCreateTime && !allowCreate)
         {
-            Debug.Log("[ALERT] Bubble has started pulsing!");
-            bubbleScript.StartPulse();
-            isBubblePulsing = true;
+            Debug.Log("[ALERT] Star creation has started!");
+            starScript.StartCreate();
+            allowCreate = true;
         }
 
-        if (timer >= stopBubbleTime && isBubblePulsing)
+        if (timer >= stopCreateTime && allowCreate)
         {
-            Debug.Log("[ALERT] Bubble has stopped pulsing!");
-            bubbleScript.EndPulse();
-            isBubblePulsing = false;
+            Debug.Log("[ALERT] Star creation has stopped!");
+            starScript.StopCreate();
+            allowCreate = false;
         }
 
         if (timer >= transitionTime && !isTransitioning)

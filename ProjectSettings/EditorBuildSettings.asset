@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/NeuosSocketClient/Demo/Scenes/demo.unity
     guid: 08864231b95b8594bbe7b68f182472c7
+  - enabled: 1
+    path: Assets/Scenes/StarryNight.unity
+    guid: bd4d6871f874d40de80b344d2848d4b4
+  - enabled: 1
+    path: Assets/end-scene.unity
+    guid: 3b08c5fb52c224fd78d4888f5016fab8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}

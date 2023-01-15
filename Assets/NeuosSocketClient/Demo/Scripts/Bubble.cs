@@ -169,8 +169,8 @@ public class Bubble : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Initializing connection to socket server...");
-        ConnectToServer();
+        // Debug.Log("Initializing connection to socket server...");
+        // ConnectToServer();
     }
 
     ///////////////////////////
