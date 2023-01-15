@@ -8,8 +8,8 @@ public class TimeLoop : MonoBehaviour
     private float timer = 0.0f;
 
     // Time constants for bubble pulsing
-    private const float startBubbleTime = 30.0f;
-    private const float stopBubbleTime = 60.0f;
+    private const float startBubbleTime = 35.0f;
+    private const float stopBubbleTime = 65.0f;
 
     private bool isBubblePulsing = false;
 

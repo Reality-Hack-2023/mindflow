@@ -180,7 +180,7 @@ public class Bubble : MonoBehaviour
     private bool BubblePulse;
 
     public void Pulse() {
-        float scaleValue = (float) 0.25 + Mathf.PingPong((float) (Time.time * 0.25f), (float) 0.75);
+        float scaleValue = (float) 0.25 + Mathf.PingPong((float) (Time.time * 0.15f), (float) 0.75);
         Vector3 size = new Vector3(scaleValue, scaleValue, scaleValue);
         gameObject.transform.localScale = size;
     }
