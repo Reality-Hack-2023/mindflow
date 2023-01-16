@@ -1,5 +1,4 @@
-# REPO-013
-## Mindflow: A VR + BCI Meditation App 
+# Mindflow: A VR + BCI Meditation App 
 https://devpost.com/software/mindflow-s5itbj?ref_content=my-projects-tab&ref_feature=my_projects
 
 ## What it does
